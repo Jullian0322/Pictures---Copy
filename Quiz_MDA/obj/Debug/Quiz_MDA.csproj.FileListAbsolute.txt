@@ -1,0 +1,11 @@
+C:\Users\julli\Pictures - Copy\Quiz_MDA\bin\Debug\Quiz_MDA.exe.config
+C:\Users\julli\Pictures - Copy\Quiz_MDA\bin\Debug\Quiz_MDA.exe
+C:\Users\julli\Pictures - Copy\Quiz_MDA\bin\Debug\Quiz_MDA.pdb
+C:\Users\julli\Pictures - Copy\Quiz_MDA\obj\Debug\Quiz_MDA.csproj.AssemblyReference.cache
+C:\Users\julli\Pictures - Copy\Quiz_MDA\obj\Debug\Quiz_MDA.csproj.SuggestedBindingRedirects.cache
+C:\Users\julli\Pictures - Copy\Quiz_MDA\obj\Debug\Quiz_MDA.Form1.resources
+C:\Users\julli\Pictures - Copy\Quiz_MDA\obj\Debug\Quiz_MDA.Properties.Resources.resources
+C:\Users\julli\Pictures - Copy\Quiz_MDA\obj\Debug\Quiz_MDA.csproj.GenerateResource.cache
+C:\Users\julli\Pictures - Copy\Quiz_MDA\obj\Debug\Quiz_MDA.csproj.CoreCompileInputs.cache
+C:\Users\julli\Pictures - Copy\Quiz_MDA\obj\Debug\Quiz_MDA.exe
+C:\Users\julli\Pictures - Copy\Quiz_MDA\obj\Debug\Quiz_MDA.pdb

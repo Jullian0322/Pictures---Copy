@@ -1,0 +1,123 @@
+a:link  {color: white; }
+a:visited {color: white; }
+a:hover {color: yellow; }	
+
+body {
+	
+	background-color: #95d3e9;
+	font-size: 1.5em;
+}
+
+.halfPage {
+	float: left;
+	width: 50%;
+	font-size: 1.25em;
+}
+
+#mainPage {
+	max-width: 1024px;
+	margin: auto;
+	border: 1px solid black;
+	background-color:bisque
+}
+
+#logo {
+	float:right;
+	width:250px;
+}
+#logoImg {
+	border-radius: 25%;
+	margin: 0px;
+}
+#leftSide {
+	float:left;
+	width:250px;
+}
+#middleTitle {
+	float:left;
+	font-size:1.5em;
+	color: #001B3B;
+	min-width: 520px;
+}
+#actualTitle {
+	font-size: 2em;
+	margin-top: 40px;
+	width: 100%;
+	text-align: center;
+}
+
+
+.clearEm {
+	clear:both;
+}
+
+#menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu li a {
+	display: block;
+	color: white;
+
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+#menu li a:hover {
+	background-color: #111;
+}
+
+.halfPage ul {
+	list-style-type: disclosure-closed;
+}
+
+.thirdPage {
+	float: left;
+	width: 33%;
+	font-size: 1.25em;
+	
+}
+
+.box {
+	margin: 15px auto;
+	height: 200px;
+	width: 200px;
+	border: 1px solid black;
+
+}
+
+.box1Color {
+	background-color: white;
+}
+.box2Color {
+	background-color: green;
+}
+.box3Color {
+	background-color: blue;
+}
+
+footer {
+	background-color: #333;
+	padding: 15px;
+	color: white;
+}
+#siteMap { text-align: center; }
+#siteMap li {
+	display: inline;
+}
+#siteMap li a:link {color: white; }
+#siteMap li a:visited {color: white; }
+#siteMap li a:hover {color: yellow; }
+
+#socials { float: right; }
+#socials img { height:50px; width: 50px; }

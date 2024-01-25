@@ -1,0 +1,20 @@
+#outputBoxtwo {
+	height:250px;
+	margin: auto;
+	width:500px;
+	border: 1px solid black;
+	font-size: 3em;
+	overflow: scroll;
+}
+
+#Inputbox {
+	margin-left: 0;
+	margin-top: 20px;
+	font-size: 2em
+}
+
+#Inputboxtwo {
+	margin-left: 0;
+	margin-top: 20px;
+	font-size: 2em
+}

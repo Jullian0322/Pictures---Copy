@@ -1,0 +1,11 @@
+C:\Users\julli\Pictures - Copy\Playground 2.0\bin\Debug\Playground 2.0.exe.config
+C:\Users\julli\Pictures - Copy\Playground 2.0\bin\Debug\Playground 2.0.exe
+C:\Users\julli\Pictures - Copy\Playground 2.0\bin\Debug\Playground 2.0.pdb
+C:\Users\julli\Pictures - Copy\Playground 2.0\obj\Debug\Playground 2.0.csproj.AssemblyReference.cache
+C:\Users\julli\Pictures - Copy\Playground 2.0\obj\Debug\Playground 2.0.csproj.SuggestedBindingRedirects.cache
+C:\Users\julli\Pictures - Copy\Playground 2.0\obj\Debug\Playground_2._0.Form1.resources
+C:\Users\julli\Pictures - Copy\Playground 2.0\obj\Debug\Playground_2._0.Properties.Resources.resources
+C:\Users\julli\Pictures - Copy\Playground 2.0\obj\Debug\Playground 2.0.csproj.GenerateResource.cache
+C:\Users\julli\Pictures - Copy\Playground 2.0\obj\Debug\Playground 2.0.csproj.CoreCompileInputs.cache
+C:\Users\julli\Pictures - Copy\Playground 2.0\obj\Debug\Playground 2.0.exe
+C:\Users\julli\Pictures - Copy\Playground 2.0\obj\Debug\Playground 2.0.pdb

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "sophomore2026playground/1.0.0": {
+        "runtime": {
+          "sophomore2026playground.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "sophomore2026playground/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

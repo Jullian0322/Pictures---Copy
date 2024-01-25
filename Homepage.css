@@ -1,0 +1,29 @@
+.img {
+	height: 100px;
+	width: 120px;
+	position: relative;
+	left: 190px;
+}
+#right{
+	float: right;
+}
+.border {
+	border: solid 5px;
+	padding: 35px;
+	margin: auto;
+}
+#bottom {
+	position: absolute;
+	bottom: 0;
+	width: 99%;
+}
+#left {
+	float: left;
+}
+#back {
+	background-color: tan;
+	font-size: 16px;
+}
+.center {
+	text-align: center;
+}

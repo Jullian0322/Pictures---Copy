@@ -1,0 +1,17 @@
+C:\Users\julli\Pictures - Copy\Caculator\bin\Debug\net6.0-windows\Caculator.exe
+C:\Users\julli\Pictures - Copy\Caculator\bin\Debug\net6.0-windows\Caculator.deps.json
+C:\Users\julli\Pictures - Copy\Caculator\bin\Debug\net6.0-windows\Caculator.runtimeconfig.json
+C:\Users\julli\Pictures - Copy\Caculator\bin\Debug\net6.0-windows\Caculator.dll
+C:\Users\julli\Pictures - Copy\Caculator\bin\Debug\net6.0-windows\Caculator.pdb
+C:\Users\julli\Pictures - Copy\Caculator\obj\Debug\net6.0-windows\Caculator.csproj.AssemblyReference.cache
+C:\Users\julli\Pictures - Copy\Caculator\obj\Debug\net6.0-windows\Caculator.csproj.GenerateResource.cache
+C:\Users\julli\Pictures - Copy\Caculator\obj\Debug\net6.0-windows\Caculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julli\Pictures - Copy\Caculator\obj\Debug\net6.0-windows\Caculator.AssemblyInfoInputs.cache
+C:\Users\julli\Pictures - Copy\Caculator\obj\Debug\net6.0-windows\Caculator.AssemblyInfo.cs
+C:\Users\julli\Pictures - Copy\Caculator\obj\Debug\net6.0-windows\Caculator.csproj.CoreCompileInputs.cache
+C:\Users\julli\Pictures - Copy\Caculator\obj\Debug\net6.0-windows\Caculator.dll
+C:\Users\julli\Pictures - Copy\Caculator\obj\Debug\net6.0-windows\refint\Caculator.dll
+C:\Users\julli\Pictures - Copy\Caculator\obj\Debug\net6.0-windows\Caculator.pdb
+C:\Users\julli\Pictures - Copy\Caculator\obj\Debug\net6.0-windows\Caculator.genruntimeconfig.cache
+C:\Users\julli\Pictures - Copy\Caculator\obj\Debug\net6.0-windows\ref\Caculator.dll
+C:\Users\julli\Pictures - Copy\Caculator\obj\Debug\net6.0-windows\Caculator.Caculator.resources

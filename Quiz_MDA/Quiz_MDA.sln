@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz_MDA", "Quiz_MDA.csproj", "{DFDE7B37-2508-4A9D-89B3-EF4C7B2356D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFDE7B37-2508-4A9D-89B3-EF4C7B2356D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFDE7B37-2508-4A9D-89B3-EF4C7B2356D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFDE7B37-2508-4A9D-89B3-EF4C7B2356D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFDE7B37-2508-4A9D-89B3-EF4C7B2356D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B3E1521-300F-46BD-8BAA-DCD58D315055}
+	EndGlobalSection
+EndGlobal

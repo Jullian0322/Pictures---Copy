@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Introduction</title>
+		<meta charset = "utf-8" >
+		 <link rel="stylesheet" href="style.css">
+		 <link rel="stylesheet" href="caculator.css">
+		 <link rel="stylesheet" href="Thing.css">
+		<style>
+			#outputBox, #outputBoxthree, #outputBoxfour {
+				height:250px;
+				margin: auto;
+				width:500px;
+				border: 1px solid black;
+				font-size: 3em;
+				overflow: scroll;
+			}
+			.mainHeaders {
+				text-align: center;
+				color: #25b859;
+				text-decoration-line: underline;
+				font-family: fantasy;
+			}
+			#inputBoxArea {
+				width: 500px;
+				margin: auto;
+				overflow: scroll;
+			}
+			#inputBox {
+				margin-left: 0;
+				margin-top: 20px;
+				font-size: 2em
+			}
+			#buttonArea {
+				margin-top: 20px;
+			}
+			#result {
+				height:50px;
+				margin: auto;
+				width:500px;
+				border: 1px solid black;
+				font-size: 2em;
+		</style>
+		<script>
+			function getTheValue(obj) {
+				//var buttonValue = document.getElementById("secondButton");
+                //var button3Value = document.getElementById("thirdButton");
+                var outputBox = document.getElementById("outputBox");
+               
+                outputBox.innerHTML += "<br>" + obj.value;
+                outputBox.innerHTML += button3Value.innerHTML;
+			}
+			function fillTheBox() {
+           
+                // let, var, nothing
+                /* multi
+                   line
+                   comment
+                */
+
+                var input1 = "Write down something!";
+                var input2 = "<br>what are you waiting for";
+               
+                var firstNumber = 5;
+           
+                addFirst(input1);
+                addNext(input2);
+            }
+			
+			 function addFirst(apple) {
+                document.getElementById("outputBox").innerHTML = apple;
+            }
+           
+            function addNext(peanutbutter) {
+                document.getElementById("outputBox").innerHTML += peanutbutter;
+
+            }
+			 function addThisText(){
+                var input = document.getElementById("inputBox");
+                var output = document.getElementById("outputBox");
+               
+                output.innerHTML += "<br>" + input.value;
+            }
+			
+		</script>
+		<script src="caculator.js">
+		</script>
+		<script src="Thing.js">
+		</script>
+		<script src="Dropdown.js">
+		</script>
+		<script src="Loops.js">
+		</script>
+		
+	</head>
+	
+	<body onload="fillTheBox();">
+		<div id="main">
+			<!-- This is my headah -->
+			<h1 class="mainHeaders">Learning the dom</h1>
+			<div id="outputBox">		</div>
+		<div id="inputBoxArea">
+			<input type="text" id="inputBox" >
+				<div id="buttonArea" class="wrapper">
+					<input class="cool" type="button" value="CLICK ME" onclick="addThisText()">
+					 <input type="button" class="button-62" id="secondButton" value="What Evaaah" onClick="getTheValue(this)">
+						<button class="button-62" id="thirdButton" onClick="getTheValue(this)">This is a test</button>
+				<hr>
+			<input type="number" id="result" size=50>
+			<div>
+				<div ontouchstart="">
+				<div class="button">
+					<input id="one" class="input" class="button" type="button" value="1" onclick="setTheNumbers(this)">
+				</div>
+				<div class="button">
+					<input id="two" class="input" class="button" type="button" value="2" onclick="setTheNumbers(this)">
+				</div>
+				<div class="button">
+					<input id="three" class="input" class="button" type="button" value="3" onclick="setTheNumbers(this)">
+				</div>
+				<div class="button">
+					<input id="four" class="input" class="button" type="button" value="4" onclick="setTheNumbers(this)">
+				</div>
+				<div class="button">
+					<input id="five" class="input" class="button" type="button" value="5" onclick="setTheNumbers(this)">
+				</div>
+				<div class="button">
+					<input id="six" class="input" class="button" type="button" value="6" onclick="setTheNumbers(this)">
+				</div>
+				<div class="button">
+					<input id="seven" class="input" class="button" type="button" value="7" onclick="setTheNumbers(this)">
+				</div>
+				<div class="button">
+					<input id="eight" class="input" class="button" type="button" value="8" onclick="setTheNumbers(this)">
+				</div>
+				<div class="button">
+					<input id="nine" class="input" class="button" type="button" value="9" onclick="setTheNumbers(this)">
+				</div>
+				<div class="button">
+					<input id="zero" class="input" class="button" type="button" value="0" onclick="doTheZero()">
+				</div>
+				<div class="button">
+					<input id="plus" class="input" class="button" type="button" value="+" onclick="setTheOperator(this)">
+				</div>
+				<div class="button">
+					<input id="minus" class="input" class="button" type="button" value="-" onclick="setTheOperator(this)">
+				</div>
+				<div class="button">
+					<input id="mutiply" class="input" class="button" type="button" value="*" onclick="setTheOperator(this)">
+				</div>
+				<div class="button">
+					<input id="divid" class="input" class="button" type="button" value="÷" onclick="setTheOperator(this)">
+				</div>
+				<div class="button">
+					<input id="equal" class="input" class="button" type="button" value="=" onclick="solveThePromblem()">
+				</div>
+				<div class="button">
+					<input id="equal" class="input" class="button" type="button" value="C" onclick="clearInput()">
+				</div>
+			</div>
+			<hr>
+			<div>
+				<div onload="fillTheBoxtwo();" id="outputBoxtwo"> </div>
+				<input type="text" id="Inputbox" >
+				<input type="text" id="Inputboxtwo" >
+				<input class="cool" type="button" value="ADD THINGS" onclick="TrueorFalse()">
+				<input class="cool" type="button" value="ADD THINGS" onclick="TrueorFalsetwo()">
+		</div>
+		<hr>
+		<div onload="fillTheBoxthree();" id="outputBoxthree"> </div>
+		<form action="/action_page.php">
+		<label for="cars">I statements:</label>
+		<select name="Statements" id="statements">
+			<optgroup label="The statement">
+				<option value="I">I</option>
+				<option value="we">We</option>
+				<option value="they">They</option>
+			</optgroup>
+		</select>
+			<br><br>
+		<label for="cars">Like Statements:</label>
+		<select name="Likes/Distest" id="Likes">
+			<optgroup label="what they feel">
+				<option value="like">Like</option>
+				<option value="love">Love</option>
+				<option value="distest">Distest</option>
+			</optgroup>
+		</select>
+		<br><br>
+		<label for="cars">Things they like:</label>
+		<select name="things" id="Things">
+			<optgroup label="things they like">
+				<option value="cars">Cars</option>
+				<option value="people">People</option>
+				<option value="pineapple">Pineapple</option>
+			</optgroup>
+		</select>
+  <br><br>
+		<label for="cars">Colors:</label>
+		<select name="color" id="Changecolor">
+			<optgroup label="colors">
+				<option value="Default">Use default</option>
+				<option value="Input">Use input</option>
+			</optgroup>
+		</select>
+  <br><br>
+		<input type="text" id="Inputboxthree" >
+  <br><br>
+  <input class="cool" type="button" value="ADD THINGS" onclick="Dropdown()">
+  </form>
+  <hr>
+  <h1>Loops</h1>
+  <div onload="fillTheBoxfour();" id="outputBoxfour"> </div>
+  <input class="cool" type="button" value="foward" onclick="loops()">
+  <input class="cool" type="button" value="backwards" onclick="loops1()">
+  <input class="cool" type="button" value="both ways" onclick="loops2()">
+  <input class="cool" type="button" value="module" onclick="loops3()">
+  <input class="cool" type="button" value="The Mighty Thor" onclick="loops4()">
+	</body>
+	
+</html>
