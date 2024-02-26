@@ -102,18 +102,7 @@ pageSize() ;
     function todaysDay() {
         const day = new Date();
         let d = day.getDate();
-        if (d = 1) {
-            return d + "st "
-        }
-        else if (d = 2) {
-            return d + "nd "
-        }
-        else if (d = 3) {
-            return d + "rd "
-        }
-        else {
-            return d + "th "
-        }
+        return d + " ";
     }
     function monthPlusYear() {
         const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -158,10 +147,10 @@ pageSize() ;
         let user = 1;
         let computer = Math.random() * 3;
 
-        document.getElementById("rock").addEventListener(click, "rock");
-        document.getElementById("paper").addEventListener(click, "paper");
-        document.getElementById("scissors").addEventListener(click, "scissors");
-        if (EventListener = "rock") {
+        document.getElementById("rock").addEventListener("click", rockFun());
+        document.getElementById("paper").addEventListener("click", paperFun());
+        document.getElementById("scissors").addEventListener("click", scissorsFun());
+        if (EventListener = rock) {
             if (user > computer) {
                 console = "You Win";
                 console = "computer picked scissors"
@@ -174,7 +163,7 @@ pageSize() ;
                 console = "Tie try again";
             }
         }
-        else if (EventListener = "paper") {
+        else if (EventListener = paper) {
             if (user > computer) {
                 console = "You Win";
                 console = "computer picked rock"
@@ -187,7 +176,7 @@ pageSize() ;
                 console = "Tie try again";
             }
         }
-        else if (EventListener = "scissors") {
+        else if (EventListener = scissors) {
             if (user > computer) {
                 console = "You Win";
                 console = "computer picked paper"
@@ -200,4 +189,17 @@ pageSize() ;
                 console = "Tie try again";
             }
         }
+    }
+
+    function rockFun() {
+        value = rock;
+        return value;
+    }
+    function paperFun() {
+        value = paper;
+        return value;
+    }
+    function scissorsFun() {
+        value = scissors;
+        return value;
     }
