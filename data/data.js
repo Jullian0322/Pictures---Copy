@@ -156,27 +156,31 @@ pageSize() ;
     // friday work
     function playRPS() {
         let user = 1;
-        if (value = 0) {
+        if (name = 0) {
             let computer = Math.random() * 3;
 
             if (user > computer) {
                 console = "You Win";
+                console = "computer picked scissors"
             }
             else if (user < computer) {
                 console = "You lose";
+                console = "computer picked paper"
             }
             else {
                 let computer = Math.random() * 3;
             }
         }
-        else if (value = 1) {
+        else if (name = 1) {
             let computer = Math.random() * 3;
 
             if (user > computer) {
                 console = "You Win";
+                console = "computer picked rock"
             }
             else if (user < computer) {
                 console = "You lose";
+                console = "computer picked scissors"
             }
             else {
                 let computer = Math.random() * 3;
@@ -187,9 +191,11 @@ pageSize() ;
 
             if (user > computer) {
                 console = "You Win";
+                console = "computer picked paper"
             }
             else if (user < computer) {
                 console = "You lose";
+                console = "computer picked rock"
             }
             else {
                 let computer = Math.random() * 3;
