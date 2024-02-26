@@ -95,15 +95,6 @@ pageSize() ;
         Inside.innerHTML += "inside";
     }
     */
-
-
-
-
-
-
-
-
-
     function dataStuff() {
         let Output = document.getElementById("output")
         Output.innerHTML = "Today is " + todaysDay() + "of " + monthPlusYear() + "It is a " + getWeek() + "There are " + getMin() + "minutes left for the " + getHour() + "hour. Just for kicks there have been " + getSecFor70() + "secounds since January 1, 1970";
@@ -161,4 +152,47 @@ pageSize() ;
         let result = seconds.toLocaleString();
 
         return result + " ";
-    } 
+    }
+    // friday work
+    function playRPS() {
+        let user = 1;
+        if (value = 0) {
+            let computer = Math.random() * 3;
+
+            if (user > computer) {
+                console = "You Win";
+            }
+            else if (user < computer) {
+                console = "You lose";
+            }
+            else {
+                let computer = Math.random() * 3;
+            }
+        }
+        else if (value = 1) {
+            let computer = Math.random() * 3;
+
+            if (user > computer) {
+                console = "You Win";
+            }
+            else if (user < computer) {
+                console = "You lose";
+            }
+            else {
+                let computer = Math.random() * 3;
+            }
+        }
+        else {
+            let computer = Math.random() * 3;
+
+            if (user > computer) {
+                console = "You Win";
+            }
+            else if (user < computer) {
+                console = "You lose";
+            }
+            else {
+                let computer = Math.random() * 3;
+            }
+        }
+    }
