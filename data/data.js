@@ -156,9 +156,12 @@ pageSize() ;
     // friday work
     function playRPS() {
         let user = 1;
-        if (name = 0) {
-            let computer = Math.random() * 3;
+        let computer = Math.random() * 3;
 
+        document.getElementById("rock").addEventListener(click, "rock");
+        document.getElementById("paper").addEventListener(click, "paper");
+        document.getElementById("scissors").addEventListener(click, "scissors");
+        if (EventListener = "rock") {
             if (user > computer) {
                 console = "You Win";
                 console = "computer picked scissors"
@@ -168,12 +171,10 @@ pageSize() ;
                 console = "computer picked paper"
             }
             else {
-                let computer = Math.random() * 3;
+                console = "Tie try again";
             }
         }
-        else if (name = 1) {
-            let computer = Math.random() * 3;
-
+        else if (EventListener = "paper") {
             if (user > computer) {
                 console = "You Win";
                 console = "computer picked rock"
@@ -183,12 +184,10 @@ pageSize() ;
                 console = "computer picked scissors"
             }
             else {
-                let computer = Math.random() * 3;
+                console = "Tie try again";
             }
         }
-        else {
-            let computer = Math.random() * 3;
-
+        else if (EventListener = "scissors") {
             if (user > computer) {
                 console = "You Win";
                 console = "computer picked paper"
@@ -198,7 +197,7 @@ pageSize() ;
                 console = "computer picked rock"
             }
             else {
-                let computer = Math.random() * 3;
+                console = "Tie try again";
             }
         }
     }
