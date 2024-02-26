@@ -1,0 +1,33 @@
+#hide {
+    background-color: orangered;
+    position: fixed;
+    margin: auto;
+    display: none;
+}
+.outside {
+    background-color: orangered;
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+.inside {
+    background-color: white;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    bottom: -20px;
+    right: -20px;
+}
+#move {
+    float: right;
+}
+#move2 {
+    left: -50px;
+    float: right;
+}
+#output {
+    background-color: orangered;
+    height: 250px;
+    width: 500px;
+    float: center;
+}

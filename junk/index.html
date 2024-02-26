@@ -1,0 +1,67 @@
+<!Doctype html>
+<html>
+    <head>
+        <script src="data.js" defer></script>
+        <link rel="stylesheet" href="data.css">
+    </head>
+    <body>
+        <div id="Date"></div>
+        <div id="Size" onload="pageSize()"></div>
+        <h1>Javascript</h1>
+        <hr>
+        <div id="Tuesday">
+            <h2>Tuesday work</h2>
+            <ul id="List">
+                <li>what</li>
+                <li>Ever</li>
+                <li>you</li>
+                <li>want</li>
+            </ul>
+            <ol id="Numbers">
+                <li>how</li>
+                <li>will</li>
+                <li>this</li>
+                <li>Work</li>
+            </ol>
+            <dl id="other">
+                <dd>what</dd>
+                <dd>Ever</dd>
+                <dd>you</dd>
+                <dd>want</dd>
+            </dl>
+            <input tupe="text"  id="items" name="list">
+            <input type="button" onclick="item(Add)" name="Add" value="Add">
+            <input type="button" onclick="item(Remove)" name="Remove" value="Remove">
+        </div>
+        <hr>
+        <div id="wednesday" >
+            <h2>wednesday work</h2>
+            <audio id="music">
+                <source src="tetris.mp3" type="audio/mpeg">
+            </audio>
+            <input type="button" onclick="OnOffSwitch()" name="switch" id="switch" value="OFF">
+            <input type="button" onclick="VideoShowing()" name="video" id="video" value="Launch">
+            <div id="hide">
+                <video width="320" height="240" id="video" controls>
+                    <source src="castle_view.mp4" type="video/mp4" alt="a birds eye view of a castle">
+                </video>
+                <input type="image" id="close" onclick="CloseVideo()" src="X.png" alt="Close" width="10" height="10">
+            </div>
+        </div>
+        <hr>
+        <div id="thursday work">
+            <h2>thursday work</h2>
+            <input type="button" eventlistener="" name="add" id="add" value="ADD">
+            <input type="button" eventlistener="" name="remove" id="remove" value="REMOVE">
+            <input type="button" onclick="dataStuff()" name="DataStuff" id="DataStuff" value="Data Stuff">
+            <div class="outside" id="move">
+                <div class="inside"></div>
+            </div>
+            <div class="outside" id="move2">
+                <div class="inside"></div>
+            </div>
+            <br>
+            <div id="output" id="moving"></div>
+        </div>
+    </body>
+</html>

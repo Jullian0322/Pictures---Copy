@@ -1,0 +1,182 @@
+.left {
+	position: relative;
+	float: left;
+	border: 5px solid black;
+	margin: auto;
+	padding: 20px;
+}
+.right {
+	position: relative;
+	float: right;
+	border: 5px solid black;
+	margin: auto;
+	padding: 20px;
+}
+.EveryE {
+	border: 5px solid black;
+	margin: auto;
+	padding: 20px;
+}
+* p {
+	color: blue;
+	font-style: italic;
+}
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: -10px;
+}
+.relative{
+	position: relative;
+	top: -10px;
+}
+.absolute{
+	position: absolute;
+	top: -10px;
+}
+.fixed{
+	position: fixed;
+	top: -100px;
+}
+.static {
+	position: static;
+	top: -10px;
+}
+.cover {
+	border: 5px solid black;
+	margin: auto;
+	padding: 20px;
+	background-repeat: no-repeat;
+	background-image: url("Coffee_Table.jpg");
+	background-size: cover;
+}
+.contain {
+	border: 5px solid black;
+	margin: auto;
+	padding: 20px;
+	background-repeat: no-repeat;
+	background-image: url("Coffee_Table.jpg");
+	background-size: contain;
+}
+.auto {
+	border: 5px solid black;
+	margin: auto;
+	padding: 20px;
+	background-repeat: no-repeat;
+	background-image: url("Coffee_Table.jpg");
+	background-size: auto;
+}
+#animation {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	background-color: red;
+	animation-name: test;
+	animation-duration: 1s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate
+}
+
+@keyframes test {
+	0% {background-color: red; left:0px; top: 0px;}
+	25% {background-color: yellow; left:200px; top:0px;}
+	50% {background-color: blue; left:200px; top:-200px;}
+	75% {background-color: green; left:0px; top:-200px;}
+	100% {background-color: red; left:0px; top: 0px;}
+}
+#Tada {
+	display: none;
+}
+@media screen and (max-width: 1000px) {
+	#Magic {
+		display: none;
+	}
+	#Tada {
+		display: inline;
+	}
+}
+#move1 {
+	position: relative;
+	left: 49px;
+}
+#move2 {
+	position: relative;
+	left: 60px;
+}
+#move3 {
+	position: relative;
+	left: 16px;
+}
+#move4 {
+	position: relative;
+	left: 49px;
+}
+#move5 {
+	position: relative;
+	left: 60px;
+}
+#move6 {
+	position: relative;
+	left: 16px;
+}
+.bigger {
+	height: 100px;
+}
+.row {
+  -webkit-display: flex;
+  -ms-display: flex;
+  display: flex;
+}
+.colums {
+  padding: 10px;
+  height: 100px;
+}
+.colums.side {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.colums.middle {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	background-color: #9999FF;
+	padding: 10px;
+}
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+	text-align: center;
+}
+#one {
+	color: red;
+}
+#two {
+	color: green;
+}
+#three {
+	color: purple;
+}
+#four {
+	color: orange;
+}
+#five {
+	color: navy;
+}
+.move {
+	position: relative;
+	left: 35px;
+	top: -21px;
+}
+.move2 {
+	position: relative;
+	left: 47px;
+	top: -21px;
+}
