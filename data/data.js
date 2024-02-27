@@ -97,7 +97,7 @@ pageSize() ;
     */
     function dataStuff() {
         let Output = document.getElementById("output")
-        Output.innerHTML = "Today is " + todaysDay() + "of " + monthPlusYear() + "It is a " + getWeek() + "There are " + getMin() + "minutes left for the " + getHour() + "hour. Just for kicks there have been " + getSecFor70() + "secounds since January 1, 1970";
+        Output.innerHTML = "Today is " + todaysDay() + "of " + monthPlusYear() + "It is a " + getWeek() + "There are " + getMin() + "minutes left for the " + getHour() + "hour. Just for kicks there have been " + getSecFor70() + "milisecounds since January 1, 1970";
     }
     function todaysDay() {
         const day = new Date();
