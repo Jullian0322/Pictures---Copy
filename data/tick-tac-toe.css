@@ -12,6 +12,10 @@
     padding: 20px;
     font-size: 30px;
     text-align: center;
-    height: 100px;
-    width: 100px;
+    height: 5px;
+    width: 5px;
+}
+#hangman {
+    border: 2px;
+    background-color: #2196F3;
 }
