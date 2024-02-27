@@ -2,6 +2,8 @@
 <html>
     <head>
         <script src="data.js" defer></script>
+        <script src="Hangman.js" defer></script>
+        <script src="tick-tac-toe.js" defer></script>
         <link rel="stylesheet" href="data.css">
         <link rel="stylesheet" href="tick-tac-toe.css">
     </head>
@@ -67,16 +69,16 @@
         <hr>
         <div id="friday">
             <h2>friday work</h2>
-            <div id="grid-container">
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
+            <div id="grid-container" onclick="playTTT()">
+                <div class="grid-item" value="0"></div>
+                <div class="grid-item" value="0"></div>
+                <div class="grid-item" value="0"></div>
+                <div class="grid-item" value="0"></div>
+                <div class="grid-item" value="0"></div>
+                <div class="grid-item" value="0"></div>
+                <div class="grid-item" value="0"></div>
+                <div class="grid-item" value="0"></div>
+                <div class="grid-item" value="0"></div>
             </div>
             <hr>
             <button class="inline" onclick="playRPS()" value="0">
@@ -91,7 +93,7 @@
             <hr>
             <div id="hangman" onload="hangMan()">
                 <canvas>
-                    
+
                 </canvas>
             </div>
         </div>

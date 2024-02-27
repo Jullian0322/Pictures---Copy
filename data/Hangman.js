@@ -8,27 +8,26 @@ function hangMan() {
     let random = Math.floor((Math.random() * 4));
     let output = document.getElementById("hangman");
     if (random = 0) {
-        let FRUITS = fruits.floor((Math.random() * 9));
-
+        let FRUITS = fruits.random();
         output.innerhtml = FRUITS;
     }
     else if (random = 1) {
-        let GAMES = games.floor((Math.random() * 9));
+        let GAMES = games.random();
 
         output.innerhtml = GAMES;
     }
     else if (random = 2) {
-        let SPORTS = sports.floor((Math.random() * 9));
+        let SPORTS = sports.random();
 
         output.innerhtml = SPORTS;
     }
     else if (random = 3) {
-        let COUNTRIES = countries.floor((Math.random() * 9))
+        let COUNTRIES = countries.random();
 
         output.innerhtml = COUNTRIES;
     }
     else if (random = 4) {
-        let ANIMALS = animals.floor((Math.random() * 9))
+        let ANIMALS = animals.random();
 
         output.innerhtml = ANIMALS;
     }

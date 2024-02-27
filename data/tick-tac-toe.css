@@ -1,10 +1,12 @@
 #grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #2196F3;
     padding: 10px;
     height: 100px;
     width: 100px;
+    position: relative;
+    left: 745px;
+    top: -40px
 }
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
@@ -12,8 +14,8 @@
     padding: 20px;
     font-size: 30px;
     text-align: center;
-    height: 5px;
-    width: 5px;
+    height: 1px;
+    width: 1px;
 }
 #hangman {
     border: 2px;
