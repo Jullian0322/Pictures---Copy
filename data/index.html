@@ -7,9 +7,10 @@
         <link rel="stylesheet" href="data.css">
         <link rel="stylesheet" href="tick-tac-toe.css">
     </head>
-    <body>
+    <body onload="hangMan()">
         <div id="Date"></div>
         <div id="Size" onload="pageSize()"></div>
+        <div id="weather"></div>
         <h1>Javascript</h1>
         <hr>
         <div id="Tuesday">
@@ -92,10 +93,13 @@
             </button>
             <hr>
             <div id="hangman">
-                <input type="button" name="hangman" onclick="hangMan()" value="start">
+                <input type="button" name="hangman" onclick="pickAnAnswer()" value="start">
                 <canvas>
 
                 </canvas>
+                <div id="wrong">
+
+                </div>
             </div>
         </div>
     </body>
