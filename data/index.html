@@ -5,6 +5,7 @@
         <script src="Hangman.js" defer></script>
         <script src="tick-tac-toe.js" defer></script>
         <link rel="stylesheet" href="data.css">
+        <link rel="stylesheet" href="math.css">
         <link rel="stylesheet" href="tick-tac-toe.css">
     </head>
     <body onload="hangMan()">
@@ -71,6 +72,31 @@
         <hr>
         <div id="friday">
             <h2>friday work</h2>
+            <div>
+                <input type="number" id="numbers" name="input">
+                <input type="button" name="math" onclick="doMath()" value="Show answers">
+                <input type="checkbox" name="floor" onclick="setToOne()" value="0">
+                    <label>Floor</label>
+                <input type="checkbox" name="ceiling" onclick="setToOne()" value="0">
+                    <label>Cieling</label>
+                <input type="checkbox" name="round" onclick="setToOne()" value="0">
+                    <label>Round</label>
+                <input type="checkbox" name="truncate" onclick="setToOne()" value="0">
+                    <label>Truncate</label>
+                <input type="checkbox" name="sine" onclick="setToOne()" value="0">
+                    <label>Sine</label>
+                <input type="checkbox" name="cosine" onclick="setToOne()" value="0">
+                    <label>Cosine</label>
+                <input type="checkbox" name="absolute" onclick="setToOne()" value="0">
+                    <label>Absolute</label>
+                <input type="checkbox" name="power" onclick="setToOne()" value="0">
+                    <label>Power</label>
+                <input type="checkbox" name="squareRoot" onclick="setToOne()" value="0">
+                    <label>Square Root</label>
+                <input type="checkbox" name="random" onclick="setToOne()" value="0">
+                    <label>Random</label>
+                <div id="results"></div>
+            </div>
             <div id="grid-container" onclick="playTTT()">
                 <div class="grid-item" value="0"></div>
                 <div class="grid-item" value="0"></div>
