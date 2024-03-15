@@ -140,7 +140,6 @@ function changeColor() {
 function texts(scripts) {
 	input = document.getElementById("texts");
 	output = document.getElementById("box");
-	let scripts = 0;
 	let input = [input];
 	if (script = 0) {
 		output.innerHTML = input + input.push("Hello");
@@ -155,34 +154,62 @@ function texts(scripts) {
 	output = input + input.shift();
 	}
 }
-// To add a item to the shopping list
-function addG() {
-	input = document.getElementsByName("shoppingL");
-	output = document.getElementById("list");
-	let number = 4
-	if (input==4) {
-		output = document.write(<li class="item">input</li> <input type="checkbox" name=`Grocery${number}` value="Have" class="move" onclick=`haveIt$(item)`> <input type="checkbox" name=/*Tried to add a varible to a string*/`delete${firstName}` value="Delete" class="move" onclick= $`delete(Grocery${number})`>);
+/* To add a item to the shopping list */
+/*
+function addG(input) {
+	var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
 	}
-	else if (input==5) {
-		output = document.write(<li class="item">input</li> <input type="checkbox" name= `Grocery${number}` value="Have" class="move2" onclick=`haveIt$(item)`> <input type="checkbox" name=`delete${number}` value="Delete" class="move2" onclick=`delete(Grocery${number})`>);
-	}
-	else if (input==0) {
-		input.innerHTML = "There's nothing to add";
-	}
-}
-// To say I have the item
-function haveIt(item) {
-  let have = false;
-  if (have == flase) {
-    document.getElementsByClassName('item').style.green;
-    have = true;
-  } else if (have == true) {
-    document.getElementsByClassName('item').style.blue;
-    have = flase;
   }
 }
-// To delete the item when a mistake is made
+*/
+/* To say I have the item */
+function haveIt(item) {
+	var list = document.querySelector('ul');
+	list.addEventListener('click', function(ev) {
+	  if (ev.target.tagName === 'LI') {
+		ev.target.classList.toggle('checked');
+	  }
+	}, false);
+}
+/* To delete the item when a mistake is made */
 function Delete(item) {
-  const list = doctype.getElementById("list");
-  list.delete(0);
+	var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
 }

@@ -1,0 +1,11 @@
+C:\Users\julli\Pictures - Copy\projectToMakeErrors\obj\Debug\projectToMakeErrors.csproj.AssemblyReference.cache
+C:\Users\julli\Pictures - Copy\projectToMakeErrors\obj\Debug\projectToMakeErrors.csproj.SuggestedBindingRedirects.cache
+C:\Users\julli\Pictures - Copy\projectToMakeErrors\obj\Debug\projectToMakeErrors.Form1.resources
+C:\Users\julli\Pictures - Copy\projectToMakeErrors\obj\Debug\projectToMakeErrors.Properties.Resources.resources
+C:\Users\julli\Pictures - Copy\projectToMakeErrors\obj\Debug\projectToMakeErrors.csproj.GenerateResource.cache
+C:\Users\julli\Pictures - Copy\projectToMakeErrors\obj\Debug\projectToMakeErrors.csproj.CoreCompileInputs.cache
+C:\Users\julli\Pictures - Copy\projectToMakeErrors\bin\Debug\projectToMakeErrors.exe.config
+C:\Users\julli\Pictures - Copy\projectToMakeErrors\bin\Debug\projectToMakeErrors.exe
+C:\Users\julli\Pictures - Copy\projectToMakeErrors\bin\Debug\projectToMakeErrors.pdb
+C:\Users\julli\Pictures - Copy\projectToMakeErrors\obj\Debug\projectToMakeErrors.exe
+C:\Users\julli\Pictures - Copy\projectToMakeErrors\obj\Debug\projectToMakeErrors.pdb

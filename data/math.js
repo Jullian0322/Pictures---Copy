@@ -1,4 +1,4 @@
-function setToOne() {
+function setToOne(value) {
     if (value = 0) {
         value = 1;
     }
@@ -18,36 +18,37 @@ function doMath() {
     let power = document.getElementsByName("power");
     let squareRoot = document.getElementsByName("squareRoot");
     let random = document.getElementsByName("random");
-    let number = document.getElementsByName("input")
+    let number = document.getElementsByName("input");
+    let output = document.getElementById("results");
 
     if (floor.value = 1) {
-        Math.floor(number)
+        output.innerHTML += Math.floor(number);
     }
     else if (cieling.value = 1) {
-        Math.ceil(number)
+        output.innerHTML += Math.ceil(number)
     }
     else if (round.value = 1) {
-        Math.round(number)
+        output.innerHTML += Math.round(number)
     }
     else if (truncate.value = 1) {
-        Math.trunc(number)
+        output.innerHTML += Math.trunc(number)
     }
     else if (sine.value = 1) {
-        Math.sin(number)
+        output.innerHTML += Math.sin(number)
     }
     else if (cosine.value = 1) {
-        Math.cos(number)
+        output.innerHTML += Math.cos(number)
     }
     else if (absolute.value = 1) {
-        Math.abs(number)
+        output.innerHTML += Math.abs(number)
     }
     else if (power.value = 1) {
-        Math.pow(number)
+        output.innerHTML += Math.pow(number)
     }
     else if (squareRoot.value = 1) {
-        Math.sqrt(number)
+        output.innerHTML += Math.sqrt(number)
     }
     else if (random.value = 1) {
-        Math.random(number)
+        output.innerHTML += Math.random(number)
     }
 }

@@ -1,6 +1,5 @@
 function playTTT() {
     let output = document.getElementsByClassName("grid-item");
-    output.addEventListener("click", showImg);
 }
 
 function showImg() {

@@ -1,0 +1,8 @@
+C:\Users\julli\Pictures - Copy\Quiz(Jullian)\bin\Debug\Quiz(Jullian).exe.config
+C:\Users\julli\Pictures - Copy\Quiz(Jullian)\bin\Debug\Quiz(Jullian).exe
+C:\Users\julli\Pictures - Copy\Quiz(Jullian)\bin\Debug\Quiz(Jullian).pdb
+C:\Users\julli\Pictures - Copy\Quiz(Jullian)\obj\Debug\Quiz(Jullian).csproj.AssemblyReference.cache
+C:\Users\julli\Pictures - Copy\Quiz(Jullian)\obj\Debug\Quiz(Jullian).csproj.SuggestedBindingRedirects.cache
+C:\Users\julli\Pictures - Copy\Quiz(Jullian)\obj\Debug\Quiz(Jullian).csproj.CoreCompileInputs.cache
+C:\Users\julli\Pictures - Copy\Quiz(Jullian)\obj\Debug\Quiz(Jullian).exe
+C:\Users\julli\Pictures - Copy\Quiz(Jullian)\obj\Debug\Quiz(Jullian).pdb

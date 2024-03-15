@@ -180,7 +180,11 @@
 		<p id="three">This is paragrph three</p>
 		<p id="four">This is paragrph four</p>
 		<p id="five">This is paragrph five</p>
-		<div id="inDiv"><script>Document.write("<p>here's some text</P> <img src="RiceAndBeans.jpg" alt="a image of rice and beans">"); Divs = Document.getElementById("inDiv"); images = Divs.getElemntsByTagName("img"); for(i=0; i<images.Length; i++) { };</script></div>
+		<div id="inDiv">
+			<!--<script>Document.write("<p>here's some text</P> <img src="RiceAndBeans.jpg" alt="a image of rice and beans">"); 
+			Divs = Document.getElementById("inDiv"); images = Divs.getElemntsByTagName("img"); for(i=0; i<images.Length; i++) { };</script>
+			-->
+		</div>
 		<input type="button" name="color" onclick="changeColor()" value="change">
 	</div>
 	
@@ -234,5 +238,19 @@
 	<div class="EveryE" id="output">
 		
 	</div>
+	<div id="myDIV" class="header">
+		<h2 style="margin:5px">My To Do List</h2>
+		<input type="text" id="myInput" placeholder="Title...">
+		<span onclick="newElement()" class="addBtn">Add</span>
+	  </div>
+	  
+	  <ul id="myUL">
+		<li>Hit the gym</li>
+		<li class="checked">Pay bills</li>
+		<li>Meet George</li>
+		<li>Buy eggs</li>
+		<li>Read a book</li>
+		<li>Organize office</li>
+	  </ul>
 	</body>
 </html>

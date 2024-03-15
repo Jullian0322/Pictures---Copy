@@ -2,7 +2,7 @@
 /*Intro*/
 pageSize() ;
      function pageSize() {
-        document.getElementById("Size").innerhtml = window.innerWidth + " x " + window.innerHeight;
+        document.getElementById("Size").innerHTML = window.innerWidth + " x " + window.innerHeight;
     }
 
     window.addEventListener('resize', function(event) {
@@ -54,7 +54,6 @@ pageSize() ;
     // Music
     function OnOffSwitch() {
         let Switch = document.getElementById("switch");
-        Switch.addEventListener("click", playMusic(Switch))
         if (Switch.value === "OFF") {
             Switch.value = "ON";
         }
@@ -64,15 +63,12 @@ pageSize() ;
     }
     function playMusic(Switch) {
         let Music = document.getElementById("music");
-        if (Switch.value === "OFF" && keypress(patternABC())) {
+        if (Switch.value === "OFF" && keydown(a)) {
             Music.play();
         }
         else {
             Music.pause();
         }
-    }
-    function patternABC() {
-        let i = 0
     }
     // Video
     function VideoShowing() {
@@ -86,15 +82,17 @@ pageSize() ;
         Video.pause();
     }
     /*Thursday work*/
-    /*
     function addEventListener() {
         let Output = document.getElementById("output")
-        let Outside = document.getElementsByClassName("outside").addEventListener("clcik", Output);
-        let Inside = document.getElementsByClassName("inside").addEventListener("clcik", Output);
-        Outside.innerHTML += "outside";
-        Inside.innerHTML += "inside";
+        let Outside = document.getElementsByClassName("outside");
+        let Inside = document.getElementsByClassName("inside");
+
+        Outside.addEventListener("clcik", Output);
+        Inside.addEventListener("clcik", Output);
+
+        Outside.innerHTML += "outside ";
+        Inside.innerHTML += "inside ";
     }
-    */
     function dataStuff() {
         let Output = document.getElementById("output")
         Output.innerHTML = "Today is " + todaysDay() + "of " + monthPlusYear() + "It is a " + getWeek() + "There are " + getMin() + "minutes left for the " + getHour() + "hour. Just for kicks there have been " + getSecFor70() + "milisecounds since January 1, 1970";
@@ -143,63 +141,40 @@ pageSize() ;
         return result + " ";
     }
     // friday work
-    function playRPS() {
-        let user = 1;
-        let computer = Math.random() * 3;
+    function playRPS(user) {
+        let computer = Math.floor(Math.random() * 3);
 
-        document.getElementById("rock").addEventListener("click", rockFun());
-        document.getElementById("paper").addEventListener("click", paperFun());
-        document.getElementById("scissors").addEventListener("click", scissorsFun());
-        if (EventListener = rock) {
-            if (user > computer) {
-                console = "You Win";
-                console = "computer picked scissors"
+        if (computer == 0) {
+            if (user == 2) {
+                console.log("you win");
             }
-            else if (user < computer) {
-                console = "You lose";
-                console = "computer picked paper"
+            else if (user == 1) {
+                console.log("you lost");
             }
             else {
-                console = "Tie try again";
+                console.log("draw");
             }
         }
-        else if (EventListener = paper) {
-            if (user > computer) {
-                console = "You Win";
-                console = "computer picked rock"
+        else if (computer == 1) {
+            if (user == 0) {
+                console.log("you win");
             }
-            else if (user < computer) {
-                console = "You lose";
-                console = "computer picked scissors"
+            else if (user == 2) {
+                console.log("you lost");
             }
             else {
-                console = "Tie try again";
+                console.log("draw");
             }
         }
-        else if (EventListener = scissors) {
-            if (user > computer) {
-                console = "You Win";
-                console = "computer picked paper"
+        else if (computer == 2) {
+            if (user == 1) {
+                console.log("you win");
             }
-            else if (user < computer) {
-                console = "You lose";
-                console = "computer picked rock"
+            else if (user == 0) {
+                console.log("you lost");
             }
             else {
-                console = "Tie try again";
+                console.log("draw");
             }
         }
-    }
-
-    function rockFun() {
-        value = rock;
-        return value;
-    }
-    function paperFun() {
-        value = paper;
-        return value;
-    }
-    function scissorsFun() {
-        value = scissors;
-        return value;
     }
