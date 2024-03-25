@@ -1,9 +1,14 @@
 ﻿using System;
+using System.Collections;
+using System.Diagnostics;
 using System.Diagnostics.PerformanceData;
 using System.Diagnostics.Tracing;
 using System.Globalization;
+using System.Linq;
 using System.Linq.Expressions;
+using System.Net.Http.Headers;
 using System.Runtime.InteropServices;
+using System.Threading;
 using System.Xml;
 
 namespace ShopmoreConsolePlayground2026
@@ -12,23 +17,53 @@ namespace ShopmoreConsolePlayground2026
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("thirty five");
-            //for loop
-            Console.WriteLine(triangleF('*', 4));
-            Console.WriteLine(triangleB('*', 4));
-            Console.WriteLine(triangleUF('*', 4));
-            Console.WriteLine(triangleUB('*', 4));
-            Console.WriteLine(triangleEvent('*', 4));
-            //while loop
-            Console.WriteLine(WtriangleF('*', 4));
-            Console.WriteLine(WtriangleEvent('*', 4));
-            Console.WriteLine(TentoFifity());
-            Console.WriteLine(FiftytoFifteen());
-            Console.WriteLine(OnetoHundread());
-            Console.WriteLine(OutofFive());
-            Console.WriteLine(Superheros());
-            Console.WriteLine(sorehrepowS());
-            Console.ReadKey();
+            Boolean done = false;
+            String input;
+
+            while (!done)
+            {
+                Console.WriteLine("[1] Trangles");
+                Console.WriteLine("[2] While Loops");
+                Console.WriteLine("[3] working with list");
+                Console.WriteLine("[4] which is faster");
+                Console.WriteLine("[Q] Exit");
+                input = Console.ReadLine();
+                if (input.ToUpper() == "Q")
+                {
+                    done = true;
+                }
+                else
+                {
+                    if (input == "1")
+                    {
+                        Console.WriteLine(triangleF('*', 4));
+                        Console.WriteLine(triangleB('*', 4));
+                        Console.WriteLine(triangleUF('*', 4));
+                        Console.WriteLine(triangleUB('*', 4));
+                        Console.WriteLine(triangleEvent('*', 4));
+                    }
+                    else if (input == "2")
+                    {
+                        Console.WriteLine(WtriangleF('*', 4));
+                        Console.WriteLine(WtriangleEvent('*', 4));
+                        Console.WriteLine(TentoFifity());
+                        Console.WriteLine(FiftytoFifteen());
+                        Console.WriteLine(OnetoHundread());
+                        Console.WriteLine(OutofFive());
+                        Console.WriteLine(Superheros());
+                        Console.WriteLine(sorehrepowS());
+                    }
+                    else if (input == "3")
+                    {
+                        Console.WriteLine(workingwithList());
+                    }
+                    else if (input == "4")
+                    {
+                        Console.WriteLine(faster());
+                    }
+                }
+            }
+
         }
 
         static string triangleF(char symbol, int numRows)
@@ -325,7 +360,7 @@ namespace ShopmoreConsolePlayground2026
             int charsCount = 0;
             char indivalchar;
 
-            Boolean done = false;
+            bool done = false;
 
             while (herosCount < heros.Length)
             {
@@ -431,7 +466,7 @@ namespace ShopmoreConsolePlayground2026
             return output;
         }
 
-        static string sentence()
+        /*static string sentence()
         {
             String[] output = { "A simple sentence is the most basic sentence that we have in English. It has just one independent clause, which means only one subject and one predicate. A simple sentence is also the shortest possible sentence; it can have as little as two words!" };
 
@@ -459,6 +494,120 @@ namespace ShopmoreConsolePlayground2026
             }
 
             return output;
+        }
+        */
+
+        static string workingwithList()
+        {
+            string[] words = { "Superman", "Batman", "Wonder Woman", "Ant Man", "The Hulk", "Captain America", "Captain Marvel", "Deadpool", "Peter", "Spider Man" };
+            ArrayList arrayList = new ArrayList();
+            string output = "";
+
+            for (int i = 0; i < words.Length; i++)
+            {
+                arrayList.Add(words[i]);
+            }
+
+            //using a array
+            printArray(words);
+            words = removeItem(words, 3);
+            printArray(words);
+
+            //using an arrayList
+            printArray(arrayList);
+            arrayList.RemoveAt(3);
+            printArray(arrayList);
+
+
+            return "";
+        }
+
+        static void printArray(string[] a)
+        {
+            Console.WriteLine("\n");
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.WriteLine(a[i]);
+            }
+        }
+
+        static void printArray(ArrayList a)
+        {
+            Console.WriteLine("\n");
+            for (int i = 0; i < a.Count; i++)
+            {
+                Console.WriteLine(a[i]);
+            }
+        }
+
+        static string[] removeItem(string[] A, int b)
+        {
+            // build a new array thats smaller than og
+            string[] newArr = new string[A.Length-1];
+            int c = 0;
+
+            for (int i = 0; i < A.Length; i++)
+            {
+                if (i != b)
+                {
+                    newArr[c++] = A[i];
+                }
+            }
+
+            return newArr;
+        }
+
+        static string faster()
+        {
+            Stopwatch timer = new Stopwatch();
+            TimeSpan timeTaken = new TimeSpan();
+            int[] number = new int[200000];
+            ArrayList arrayList = new ArrayList();
+            Random rnd = new Random();
+
+            for (int i = 0; i <number.Length; i++)
+            {
+                number[i] = rnd.Next(1, 1001);
+                arrayList.Add(number[i]);
+            }
+
+            timer.Start();
+            for (int i = 0; i <= 100000; i++)
+            {
+                number = removeItem(number, 50);
+            }
+            timer.Stop();
+
+            timer.Start();
+            for (int i = 0; i <= 100000; i++)
+            {
+                
+                arrayList.RemoveAt(50);
+                
+            }
+            timer.Stop();
+            timeTaken = timer.Elapsed;
+
+            Console.WriteLine(timeTaken.ToString());
+
+            return "";
+        }
+
+        static int[] removeItem(int[] A, int b)
+        {
+            // build a new array thats smaller than og
+            int[] newArr = new int[A.Length - 1];
+            int c = 0;
+
+            for (int i = 0; i < A.Length; i++)
+            {
+                if (i != b)
+                {
+                    newArr[c++] = A[i];
+                }
+            }
+
+            return newArr;
         }
     }
 }
