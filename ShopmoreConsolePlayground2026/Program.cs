@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections;
+using System.Data.SqlTypes;
 using System.Diagnostics;
 using System.Diagnostics.PerformanceData;
 using System.Diagnostics.Tracing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Net.Http.Headers;
@@ -26,6 +28,10 @@ namespace ShopmoreConsolePlayground2026
                 Console.WriteLine("[2] While Loops");
                 Console.WriteLine("[3] working with list");
                 Console.WriteLine("[4] which is faster");
+                Console.WriteLine("[5] Sort some numbers");
+                Console.WriteLine("[6] Read and write");
+                Console.WriteLine("[7] combine two list");
+                Console.WriteLine("[8] see what remains");
                 Console.WriteLine("[Q] Exit");
                 input = Console.ReadLine();
                 if (input.ToUpper() == "Q")
@@ -60,6 +66,23 @@ namespace ShopmoreConsolePlayground2026
                     else if (input == "4")
                     {
                         Console.WriteLine(faster());
+                    }
+                    else if (input == "5")
+                    {
+                        Console.WriteLine(sort());
+                        Console.WriteLine(swapSort());
+                    }
+                    else if (input == "6")
+                    {
+                       //Console.WriteLine(ReadandWrite(Result.txt));
+                    }
+                    else if (input == "7")
+                    {
+                        Console.WriteLine(CombinetwoArrays());
+                    }
+                    else if (input == "8")
+                    {
+                        Console.WriteLine(Combine2());
                     }
                 }
             }
@@ -501,7 +524,6 @@ namespace ShopmoreConsolePlayground2026
         {
             string[] words = { "Superman", "Batman", "Wonder Woman", "Ant Man", "The Hulk", "Captain America", "Captain Marvel", "Deadpool", "Peter", "Spider Man" };
             ArrayList arrayList = new ArrayList();
-            string output = "";
 
             for (int i = 0; i < words.Length; i++)
             {
@@ -527,7 +549,11 @@ namespace ShopmoreConsolePlayground2026
             Console.WriteLine("\n");
             for (int i = 0; i < a.Length; i++)
             {
-                Console.WriteLine(a[i]);
+                if (i != 0)
+                {
+                    Console.Write(", ");
+                }
+                Console.Write(a[i]);
             }
         }
 
@@ -536,7 +562,11 @@ namespace ShopmoreConsolePlayground2026
             Console.WriteLine("\n");
             for (int i = 0; i < a.Count; i++)
             {
-                Console.WriteLine(a[i]);
+                if (i != 0)
+                {
+                    Console.Write(", ");
+                }
+                Console.Write(a[i]);
             }
         }
 
@@ -608,6 +638,242 @@ namespace ShopmoreConsolePlayground2026
             }
 
             return newArr;
+        }
+
+        static string sort()
+        {
+            int[] num = { 7, 9, 8, 1, 10, 5, 6, 2, 4, 3 };
+            printArray(num);
+
+            num = sorting(num);
+
+            printArray(num);
+
+            return "";
+        }
+
+        static void printArray(int[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (i != 0)
+                {
+                    Console.Write(", ");
+                }
+                Console.Write(a[i]);
+    }
+
+            Console.WriteLine("\n");
+}
+
+        static int[] sorting(int[] a)
+        {
+            int temp;
+            Boolean swapped;
+
+            for (int i = 0; i < a.Length - 1; i++)
+            {
+                swapped = false;
+                for (int j = 0;  j < a.Length - 1; j++)
+                {
+                    if(a[j] < a[j+1])
+                    {
+                        temp = a[j];
+                        a[j] = a[j+1];
+                        a[j + 1] = temp;
+                        swapped = true;
+                    }
+                }
+                
+                if (!swapped)
+                {
+                    break;
+                }
+            }
+
+            return a;
+        }
+
+        static int[] ReadandWrite(string fileName)
+        {
+            Random rnd = new Random();
+
+            string output = "";
+
+            int[] number = new int [10000];
+
+
+            for (int i = 0; i < number.Length; i++)
+            {
+                number[i] = rnd.Next(500, 1501);
+            }
+
+            for(int i = 0; i < number.Length; i++)
+            {
+                if (i!=0)
+                {
+                    output += ", ";
+                }
+                output += number[i];
+            }
+
+            FileStream stream = new FileStream(fileName, FileMode.Create);
+            using (StreamWriter sw = new StreamWriter(stream)) { sw.WriteLine(output); }
+
+            return number;
+        }
+
+        static string swapSort()
+        {
+            int[] num = { 7, 9, 8, 1, 10, 5, 6, 2, 4, 3 };
+            
+            SwapingSort(num);
+
+            printArray(num);
+            
+            return "";
+        }
+
+        static int[] SwapingSort(int[] a)
+        {
+
+            Boolean swapped = false;
+            for (int i = 0; i < a.Length; i++)
+            {
+                int j = i;
+                int theItem = a[i];
+                while (j > 0 && theItem < a[j-1])
+                {
+                    a[j] = a[j - 1];
+                    j--;
+                    swapped = true;
+                }
+
+                if (swapped) 
+                { 
+                    a[j] = theItem; 
+                }
+            }
+
+            return a;
+        }
+
+        static ArrayList CombinetwoArrays()
+        {
+            Random rnd = new Random();
+
+            int[] a = new int[50];
+
+            int[] b = new int[50];
+
+            ArrayList c = new ArrayList();
+
+            for (int i = 0; i < a.Length; i++)
+            {
+                a[i] = rnd.Next(500, 1501);
+            }
+
+            for (int i = 0; i < b.Length; i++)
+            {
+                b[i] = rnd.Next(500, 1501);
+            }
+
+            a = sorting(a);
+
+            b = SwapingSort(b);
+
+            c = CombingTime(a, b);
+
+            printArray(c);
+
+            return c;
+        }
+
+        static ArrayList CombingTime(int[] a, int[] b)
+        {
+            ArrayList c = new ArrayList();
+
+            int counterA = 0;
+
+            int counterB = 0;
+
+            while (counterA < a.Length && counterB < b.Length)
+            {
+                if (a[counterA] < b[counterB])
+                {
+                    c.Add(a[counterA]);
+                    counterA++;
+                }
+                else
+                {
+                    c.Add(b[counterB]);
+                    counterB++;
+                }
+            }
+
+            while (counterA < a.Length)
+            {
+                c.Add(a[counterA++]);
+            }
+
+            while (counterB < b.Length)
+            {
+                c.Add(b[counterB++]);
+            }
+
+            return c;
+        }
+
+        static ArrayList Combine2 ()
+        {
+            int min = 500;
+            int max = 575;
+            int[] a = getRandom(50, min, max);
+            int[] b = getRandom(50, min, max);
+            ArrayList c = new ArrayList();
+
+            a = sorting(a);
+            b = sorting(b);
+            c = CombingTime(a, b);
+            c = findWhatsMissing(c, min, max);
+
+            printArray(c);
+            return c;
+        }
+
+        static int[] getRandom(int howMany, int min, int max)
+        {
+            int[] a = new int[howMany];
+
+            Random rnd = new Random(Environment.TickCount);
+
+            for (int i = 0; i < a.Length; i++)
+            {
+                a[i] = rnd.Next(min, max+1);
+            }
+
+            return a;
+        }
+
+        static ArrayList findWhatsMissing(ArrayList a, int min, int max)
+        {
+            Boolean doneOne = false;
+
+            ArrayList b = new ArrayList();
+            for (int i = min; i <= max; i++)
+            {
+                if (!a.Contains(i))
+                {
+                    if (doneOne)
+                    {
+                        Console.Write(", ");
+                    }
+
+                    Console.Write(a[i]);
+                    doneOne = true;
+                }
+            }
+            return a;
         }
     }
 }
