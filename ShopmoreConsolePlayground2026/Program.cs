@@ -10,6 +10,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Net.Http.Headers;
 using System.Runtime.InteropServices;
+using System.Runtime.Remoting.Messaging;
 using System.Threading;
 using System.Xml;
 
@@ -32,6 +33,7 @@ namespace ShopmoreConsolePlayground2026
                 Console.WriteLine("[6] Read and write");
                 Console.WriteLine("[7] combine two list");
                 Console.WriteLine("[8] see what remains");
+                Console.WriteLine("[9] Console Assignments");
                 Console.WriteLine("[Q] Exit");
                 input = Console.ReadLine();
                 if (input.ToUpper() == "Q")
@@ -83,6 +85,61 @@ namespace ShopmoreConsolePlayground2026
                     else if (input == "8")
                     {
                         Console.WriteLine(Combine2());
+                    }
+                    else if (input == "9")
+                    {
+                        String Input2;
+
+                        input = "";
+
+                        Input2 = Console.ReadLine();
+
+                        Console.WriteLine("[1] see if it's a palindrome");
+                        Console.WriteLine("[2] turn into binary");
+                        Console.WriteLine("[3] turn into deciamal");
+                        Console.WriteLine("[4] double time");
+                        Console.WriteLine("[5] muitiples");
+                        Console.WriteLine("[6] what chareters show up the most");
+                        Console.WriteLine("[7] whats not there");
+                        Console.WriteLine("[8] fip all w's and m's");
+                        Console.WriteLine("[9] replace all the vowols");
+
+                        if (Input2 == "1")
+                        {
+                            Console.WriteLine(isItAPalindrome());
+                        }
+                        else if (Input2 == "2")
+                        {
+                            Console.WriteLine(binary());
+                        }
+                        else if (Input2 == "3")
+                        {
+                            Console.WriteLine(decibial());
+                        }
+                        else if (Input2 == "4")
+                        {
+                            Console.WriteLine(doubleTime());
+                        }
+                        else if (Input2 == "5")
+                        {
+                            Console.WriteLine(Times());
+                        }
+                        else if (Input2 == "6")
+                        {
+                            Console.WriteLine(howManyTimes());
+                        }
+                        else if (Input2 == "7")
+                        {
+                            Console.WriteLine(whatNotThere());
+                        }
+                        else if (Input2 == "8")
+                        {
+                            Console.WriteLine(MtoW());
+                        }
+                        else if (Input2 == "9")
+                        {
+                            Console.WriteLine(changeVowols());
+                        }
                     }
                 }
             }
@@ -874,6 +931,233 @@ namespace ShopmoreConsolePlayground2026
                 }
             }
             return a;
+        }
+
+        static ArrayList isItAPalindrome()
+        {
+            String input;
+
+            input = Console.ReadLine();
+
+            String temp = input;
+
+            temp.Replace(",", "");
+            temp.Replace(".", "");
+            temp.Replace("!", "");
+            temp.Replace("?", "");
+
+            ArrayList console = new ArrayList(); 
+
+            console.Add(temp);
+
+            for (int i = 0; i < temp.Length; i++)
+            {
+
+            }
+
+            return console;
+        }
+
+        static string binary()
+        {
+            String input;
+
+            int value = 0;
+
+            input = Console.ReadLine();
+
+            input = Convert.ToString(value);
+
+            Console.WriteLine("Please put a binary number (It's Just 0's and 1's)");
+
+            string binary = Convert.ToString(value, 2);
+
+            return binary;
+        }
+
+        static string decibial()
+        {
+            String input;
+
+            input = Console.ReadLine();
+
+            Console.WriteLine("Please put a binary number (It's Just 0's and 1's)");
+
+            string decibal = Convert.ToInt32(input, 2).ToString(); ;
+
+            return decibal;
+        }
+
+        static ArrayList doubleTime()
+        {
+            String input;
+
+            input = Console.ReadLine();
+
+            ArrayList list = new ArrayList();
+
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (input == input + 1)
+                {
+                    list.Add(input);
+                }
+            }
+
+            return list;
+        }
+
+        static string Times()
+        {
+            String input;
+
+            input = Console.ReadLine();
+
+            mutiplcation(5);
+
+            mutiplcation(20);
+
+            return input;
+        }
+
+        static int mutiplcation(int number)
+        {
+            int result = 0;
+
+            for (int i = 0; i <= 20; i++)
+            {
+                result = number * i;
+                i++;
+            }
+
+            Console.Write(result);
+            return result;
+        }
+
+        static String howManyTimes()
+        {
+            Console.WriteLine("PLease type in a sentence");
+
+            String input;
+            String temp;
+
+            input = Console.ReadLine();
+            int i = 0;
+            temp = input;
+
+            temp.Replace(" ", "");
+            temp.Replace(",", "");
+            temp.Replace("!", "");
+            temp.Replace(".", "");
+            temp.Replace("?", "");
+
+            while (i <= temp.Length)
+            {
+                
+            }
+
+            String results = "";
+
+            return results;
+        }
+
+        static String whatNotThere()
+        {
+            String[] lowLetter = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
+            String[] highLetter = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
+
+            Console.WriteLine("Please put a sentence here");
+
+            String input = Console.ReadLine();
+            String[] temp = { input };
+
+            String[] one = Remove(temp, lowLetter);
+            String[] two = Remove(temp, highLetter);
+            
+            Console.WriteLine($"There isn't any {one} or {two}");
+
+            String results = "";
+
+            return results;
+        }
+
+        static String[] Remove(String[] sentence, String[] example)
+        {
+            for (int i = 0; i <= sentence.Length; i++)
+            {
+                if (sentence == example)
+                {
+                    example = sentence;
+                }
+            }
+
+            return example;
+        }
+
+        static String MtoW()
+        {
+            String input = Console.ReadLine();
+
+            Console.WriteLine("Please put a sentence here");
+
+            for(int i = 0; i <= input.Length; i++)
+            {
+                input.ToUpper();
+                    
+                if (input == "M")
+                {
+                    input = "W";
+                }
+                else if (input == "W")
+                {
+                    input = "M";
+                }
+                }
+
+            Console.WriteLine(input);
+
+            String results = "";
+
+            return results;
+            }
+
+        static String changeVowols()
+        {
+            String input = Console.ReadLine();
+
+            Console.WriteLine("Please put a sentence here");
+
+            for (int i = 0; i <= input.Length; i++)
+            {
+                input.ToUpper();
+
+                if (input == "A")
+                {
+                    input = i.ToString();
+                }
+                else if (input == "E")
+                {
+                    input = i.ToString();
+                }
+                else if (input == "I")
+                {
+                    input = i.ToString();
+                }
+                else if (input == "O")
+                {
+                    input = i.ToString();
+                }
+                else if (input == "U")
+                {
+                    input = i.ToString();
+                }
+            }
+
+            Console.WriteLine(input);
+
+            String result = "";
+
+            return result;
         }
     }
 }
