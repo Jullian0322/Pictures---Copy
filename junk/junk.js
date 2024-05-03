@@ -155,7 +155,7 @@ function texts(scripts) {
 	}
 }
 /* To add a item to the shopping list */
-/*
+
 function addG(input) {
 	var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
@@ -181,7 +181,7 @@ function addG(input) {
 	}
   }
 }
-*/
+
 /* To say I have the item */
 function haveIt(item) {
 	var list = document.querySelector('ul');

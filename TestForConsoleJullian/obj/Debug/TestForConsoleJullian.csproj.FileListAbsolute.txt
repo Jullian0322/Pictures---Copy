@@ -1,0 +1,7 @@
+C:\Users\julli\Pictures - Copy\TestForConsoleJullian\bin\Debug\TestForConsoleJullian.exe.config
+C:\Users\julli\Pictures - Copy\TestForConsoleJullian\bin\Debug\TestForConsoleJullian.exe
+C:\Users\julli\Pictures - Copy\TestForConsoleJullian\bin\Debug\TestForConsoleJullian.pdb
+C:\Users\julli\Pictures - Copy\TestForConsoleJullian\obj\Debug\TestForConsoleJullian.csproj.AssemblyReference.cache
+C:\Users\julli\Pictures - Copy\TestForConsoleJullian\obj\Debug\TestForConsoleJullian.csproj.CoreCompileInputs.cache
+C:\Users\julli\Pictures - Copy\TestForConsoleJullian\obj\Debug\TestForConsoleJullian.exe
+C:\Users\julli\Pictures - Copy\TestForConsoleJullian\obj\Debug\TestForConsoleJullian.pdb

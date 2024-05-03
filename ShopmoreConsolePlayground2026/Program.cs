@@ -76,7 +76,7 @@ namespace ShopmoreConsolePlayground2026
                     }
                     else if (input == "6")
                     {
-                       //Console.WriteLine(ReadandWrite(Result.txt));
+                        //Console.WriteLine(ReadandWrite(Result.txt));
                     }
                     else if (input == "7")
                     {
@@ -718,10 +718,10 @@ namespace ShopmoreConsolePlayground2026
                     Console.Write(", ");
                 }
                 Console.Write(a[i]);
-    }
+            }
 
             Console.WriteLine("\n");
-}
+        }
 
         static int[] sorting(int[] a)
         {
@@ -1036,49 +1036,86 @@ namespace ShopmoreConsolePlayground2026
 
         static String howManyTimes()
         {
-            Console.WriteLine("PLease type in a sentence");
+            string vowels = "aeiou";
+            string output6 = "", output7 = "", output9 = "";
+            int[] countChars = new int[26];
+            int pos = 0;
+            int max = 0;
 
-            String input;
-            String temp;
+            String input = Console.ReadLine();
 
-            input = Console.ReadLine();
-            int i = 0;
-            temp = input;
 
-            temp.Replace(" ", "");
-            temp.Replace(",", "");
-            temp.Replace("!", "");
-            temp.Replace(".", "");
-            temp.Replace("?", "");
+            string sentence = "";
+            Console.WriteLine("\nPlease give me a sentence to manipulate");
+            sentence = Console.ReadLine();
+            input = sentence.ToUpper().Replace(" ", "");
 
-            while (i <= temp.Length)
+            // 6 ------- Which letter happens the most --------
+            for (int i = 0; i < input.Length; i++)
             {
-                
+                // Grab each chacter and put it into an array at it's
+                // position within the alphabet
+                if (input[i] >= 65 && input[i] <= 91) countChars[input[i] - 65]++;
             }
 
-            String results = "";
+            // 6 - Find the one that happens most
+            max = countChars[0];
+            for (int i = 1; i < countChars.Length; i++)
+            {
+                if (countChars[i] > max) { max = countChars[i]; pos = i; }
+            }
 
-            return results;
+            // 6 - Find all the ones that hit the max
+            for (int i = 0; i < countChars.Length; i++)
+            {
+                if (countChars[i] == max)
+                {
+                    if (output6 != "") { output6 += ", "; }
+                    output6 += (char)(i + 65);
+                }
+            }
+
+            String result = "";
+
+            return result;
         }
 
         static String whatNotThere()
         {
-            String[] lowLetter = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
-            String[] highLetter = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
-
-            Console.WriteLine("Please put a sentence here");
+            string vowels = "aeiou";
+            string output6 = "", output7 = "", output9 = "";
+            int[] countChars = new int[26];
+            int pos = 0;
+            int max = 0;
 
             String input = Console.ReadLine();
-            String[] temp = { input };
 
-            String[] one = Remove(temp, lowLetter);
-            String[] two = Remove(temp, highLetter);
-            
-            Console.WriteLine($"There isn't any {one} or {two}");
 
-            String results = "";
+            string sentence = "";
+            Console.WriteLine("\nPlease give me a sentence to manipulate");
+            sentence = Console.ReadLine();
+            input = sentence.ToUpper().Replace(" ", "");
 
-            return results;
+            // 6 - Find all the ones that hit the max
+            for (int i = 0; i < countChars.Length; i++)
+            {
+                if (countChars[i] == max)
+                {
+                    if (output6 != "") { output6 += ", "; }
+                    output6 += (char)(i + 65);
+                }
+                // 7 ------ Which are not in the string ------
+                if (countChars[i] == 0)
+                {
+                    if (output7 != "") { output7 += ", "; }
+                    output7 += (char)(i + 65);
+
+                }
+            }
+
+            String result = "";
+
+            return result;
         }
 
         static String[] Remove(String[] sentence, String[] example)
@@ -1100,26 +1137,16 @@ namespace ShopmoreConsolePlayground2026
 
             Console.WriteLine("Please put a sentence here");
 
-            for(int i = 0; i <= input.Length; i++)
-            {
-                input.ToUpper();
-                    
-                if (input == "M")
-                {
-                    input = "W";
-                }
-                else if (input == "W")
-                {
-                    input = "M";
-                }
-                }
+            input.Replace("m", "w");
+
+            input.Replace("M", "W");
 
             Console.WriteLine(input);
 
             String results = "";
 
             return results;
-            }
+        }
 
         static String changeVowols()
         {

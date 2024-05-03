@@ -14,11 +14,11 @@ namespace Friday
             Console.Write("Enter a sentence");
             string text = Console.ReadLine();
             Console.WriteLine(checkTheSentence(text));
+            Console.ReadLine();
         }
 
         static string checkTheSentence(string text)
         {
-            bool space = false;
             int words = 0;
             int word = 0;
             string temp = text;
@@ -31,8 +31,7 @@ namespace Friday
             temp.Replace("?", "");
             temp.Replace("!", "");
 
-            //try to put temp into a array
-            String[] array = new string[temp];
+            string[] array = {temp};
 
             for (int i = 0; i <= array.Length; i++)
             {
@@ -57,7 +56,7 @@ namespace Friday
             else
             {
                 //Something to percentage and get a zero
-                if (word % 2 = 0)
+                if (word % 2 == 0)
                 {
                     for (int i = array.Length; i > 0; i--)
                     {

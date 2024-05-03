@@ -1,3 +1,7 @@
 C:\Users\julli\Pictures - Copy\Friday\obj\Debug\Friday.csproj.AssemblyReference.cache
-C:\Users\julli\Pictures - Copy\Friday\obj\Debug\Friday.csproj.SuggestedBindingRedirects.cache
 C:\Users\julli\Pictures - Copy\Friday\obj\Debug\Friday.csproj.CoreCompileInputs.cache
+C:\Users\julli\Pictures - Copy\Friday\bin\Debug\Friday.exe.config
+C:\Users\julli\Pictures - Copy\Friday\bin\Debug\Friday.exe
+C:\Users\julli\Pictures - Copy\Friday\bin\Debug\Friday.pdb
+C:\Users\julli\Pictures - Copy\Friday\obj\Debug\Friday.exe
+C:\Users\julli\Pictures - Copy\Friday\obj\Debug\Friday.pdb

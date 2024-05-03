@@ -1,0 +1,7 @@
+C:\Users\julli\Pictures - Copy\Stacks\bin\Debug\Stacks.exe.config
+C:\Users\julli\Pictures - Copy\Stacks\bin\Debug\Stacks.exe
+C:\Users\julli\Pictures - Copy\Stacks\bin\Debug\Stacks.pdb
+C:\Users\julli\Pictures - Copy\Stacks\obj\Debug\Stacks.csproj.AssemblyReference.cache
+C:\Users\julli\Pictures - Copy\Stacks\obj\Debug\Stacks.csproj.CoreCompileInputs.cache
+C:\Users\julli\Pictures - Copy\Stacks\obj\Debug\Stacks.exe
+C:\Users\julli\Pictures - Copy\Stacks\obj\Debug\Stacks.pdb
